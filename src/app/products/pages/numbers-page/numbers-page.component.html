@@ -1,0 +1,20 @@
+<p-panel header="pipes numbers" class="p-2">
+  <h1>Pipes numericos</h1>
+  <P>pipes incluidos en angular usualmente en common module</P>
+</p-panel>
+
+<div class="grid mt-2">
+  <div class="col-12 md:col-4">
+    <p-card header="uppercase">{{
+      totalSells + 1235 | number : "1.2-3"
+    }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="uppercase">{{
+      totalSells | currency : "COP" : "symbol-narrow"
+    }}</p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="uppercase">{{ percenteage | percent }}</p-card>
+  </div>
+</div>
